@@ -31,8 +31,8 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body dir="rlt">
-    <audio autoplay="true" loop="true" src="audio.mp3"></audio>
+<body dir="rlt" onmouseover="play()">
+    <audio autoplay loop id="audio" src="audio.mp3"></audio>
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner"></div>
@@ -714,6 +714,10 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        function play(){
+            document.querySelector("audio").play();
+        }
+    </script>
 </body>
-
 </html>
