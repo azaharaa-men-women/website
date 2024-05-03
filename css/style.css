@@ -212,6 +212,9 @@ h6,
     .sticky-top.navbar-dark .navbar-brand h1 {
         color: var(--primary);
     }
+    .sticky-top.navbar-dark .navbar-brand div {
+        color: var(--primary);
+    }
 }
 
 
